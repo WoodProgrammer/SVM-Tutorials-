@@ -3,8 +3,8 @@ language: python
 python:
   - "2.7"
 
+install: "pip install scipy"
 install: "pip install -r requirement.txt"
 
 
-script: apt-get install python-scipy
 script: python ml_test.py
