@@ -5,7 +5,7 @@ python:
 
 install: "pip install numpy scipy matplotlib ipython jupyter pandas sympy nose"
 install: "pip install -U scikit-learn"
-install: "pip install pip install -U pandas"
+
 install: "pip install numpy"
 install: "pip install unittest2"
 
