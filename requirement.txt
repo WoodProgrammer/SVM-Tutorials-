@@ -1,5 +1,4 @@
-numpy
 pandas
+scipy
 sklearn
 unittest2
-scipy

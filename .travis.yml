@@ -3,8 +3,7 @@ language: python
 python:
   - "2.7"
 
-install: "pip install scipy"
+install: "pip install numpy scipy matplotlib ipython jupyter pandas sympy nose"
 install: "pip install -r requirement.txt"
-
 
 script: python ml_test.py
