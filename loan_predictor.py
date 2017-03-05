@@ -14,9 +14,9 @@ datas['purpose']=datas.purpose.map({'debt_consolidation':0,'credit_card':1,'all_
 #print datas['purpose']
 
 #print datas.head()
-main_cols=["credit.policy","purpose","int.rate","installment","log.annual.inc","dti","fico","days.with.cr.line","revol.bal","revol.util","inq.last.6mths","delinq.2yrs","pub.rec"]
-main_datas=datas[main_cols]
-real_class=datas['not.fully.paid']
+
+main_datas=datas[datas.keys()]
+real_class=datas['paid_stat']
 #print main_class
 
 def run_tester():
@@ -25,3 +25,4 @@ def run_tester():
     predicted_class=svm.predict(main_datas)
     return accuracy_score(real_class,predicted_class)
 #print
+print run_tester()
